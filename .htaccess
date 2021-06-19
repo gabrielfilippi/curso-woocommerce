@@ -14,3 +14,14 @@ RewriteRule . /curso-woocommerce/index.php [L]
 </IfModule>
 
 # END WordPress
+# BEGIN WP CERBER GROOVE
+# Protection of admin scripts is enabled (CVE-2018-6389)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^(.*)wp-admin/+load-scripts\.php$ [OR,NC]
+RewriteCond %{REQUEST_URI} ^(.*)wp-admin/+load-styles\.php$ [NC]
+RewriteCond %{HTTP_COOKIE} !cerber_groove_x_xdrOBzoDKiXA7G8lkyPCMbWJ=JbBlgUW76cp4QEmnywZXtMiPqOs9
+RewriteRule (.*) - [R=403,L]
+</IfModule>
+# END WP CERBER GROOVE

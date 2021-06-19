@@ -1,0 +1,22 @@
+/*  MICROTHEMER STYLES  */
+
+
+/*= Main Menu ================= */
+
+/** Main Menu >> user account - menu **/
+#mega-menu-item-1429 {
+	background-color: #D2D2D2 !important;
+	width: 40px !important;
+	height: 40px !important;
+	padding: 0 !important;
+	margin-right: 10px !important;
+	margin-left: 20px !important;
+	border-radius: 50% !important;
+}
+#mega-menu-item-1429 > .dashicons-admin-users {
+	line-height: 40px !important;
+	text-align: center !important;
+	font-size: 25px !important;
+	padding-left: 8px !important;
+}
+
